@@ -28,12 +28,50 @@ void Cliente::save(ofstream & out) const{
 
 }
 
-//ostream& operator<<(ostream& out, const Cliente & cli)
-//{
-//		out << cli.getId() << " ; " << cli.getNome() << " ; " << cli.getData() << " ; " << cli.getVolCompras();
-//		return out;
-//}
+Cliente::Cliente()
+{
 
+}
+
+void Cliente::setId(int id)
+{
+	this->setId = id;
+}
+
+void Cliente::setNome(string nome)
+{
+	this->setNome = nome;
+}
+
+void Cliente::setVolCompras(double VolCompras)
+{
+	this->setVolCompras = VolCompras;
+}
+
+void Cliente::setData(Data data)
+{
+	this->setData = data;
+}
+
+ostream& operator<<(ostream& out, const Cliente & cli)
+{
+		out << cli.getId() << " ; " << cli.getNome() << " ; " << cli.getData() << " ; " << cli.getVolCompras();
+		return out;
+}
+
+istream & operator >> (const Cliente & cli, istream& in)
+{
+	int iId;
+	string strNome;
+	double dblVolCompras;
+	Data ddata;
+	string strId;
+	string strVolCompras;
+	string strdata;
+	getline(in, strId, ';');
+	strId.pop_back();
+	iId = stoi(strId);
+}
 
 bool operator<(const Cliente &cli1, const Cliente &cli2){
   // A IMPLEMENTAR

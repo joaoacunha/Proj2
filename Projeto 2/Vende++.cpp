@@ -1,4 +1,6 @@
 #include "Vende++.h"
+#include "fstream"
+#include "string"
 
 
 VendeMaisMais::VendeMaisMais(string loja, string fichClients, string fichProdutos, string fichTransacoes){
@@ -53,12 +55,34 @@ void VendeMaisMais::saveChanges() const{
 
 }
 
+void VendeMaisMais::leClientes(string nomeficheiro)
+{
+	fstream clientesfile;
+	clientesfile.open(nomeficheiro);
+		if (!clientesfile)
+		{
+			cout << "Opcao invalida";
+		}
+		int itamanho;
+		string stamanho;
+		getline(clientesfile, stamanho);
+		itamanho = stoi(stamanho);
+		for (int a = 0; a <= itamanho; a++)
+		{
+			Cliente clientea;
+			string strauxiliar;
+			getline(clientesfile, strauxiliar);
+			clientea << strauxiliar;
+		}
+}
+
 /*********************************
  * Mostrar Loja
  ********************************/  
 
 // mostra o conteudo de uma loja
-ostream& operator<<(ostream& out, const VendeMaisMais & supermercado)
+ostream& operator <<(ostream& out, const VendeMaisMais & supermercado)
 {
+
 	return out;
 }

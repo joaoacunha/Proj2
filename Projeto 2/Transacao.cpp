@@ -16,9 +16,9 @@ void Transacao::save(ofstream & out) const{ // transacao guardada como na forma 
 }
 
 
-//ostream& operator<<(ostream& out, const Transacao & trans)
-//{
-//	out << trans.getIdCliente() << " ; " << trans.data << " ; ";
-//	//for (int a = 0; a < )
-//	return out;
-//}
+ostream& operator<<(ostream& out, const Transacao & trans)
+{
+	out << trans.getIdCliente() << " ; " << trans.data << " ; ";
+	for (int a = 0; a < )
+	return out;
+}

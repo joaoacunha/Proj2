@@ -41,6 +41,8 @@ class VendeMaisMais{
   void listarProdutos() const;
   void mostraInformacaoCliente(string nome);
   void saveChanges() const;
-
+  void leClientes(string nomeficheiro);
+  void leProdutos(string nomeficheiro);
+  void leTransacoes(string nomeficheiro);
   friend ostream& operator<<(ostream& out, const VendeMaisMais & supermercado);
 };
