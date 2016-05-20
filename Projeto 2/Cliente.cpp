@@ -68,6 +68,7 @@ istream & operator >> (const Cliente & cli, istream& in)
 	string strId;
 	string strVolCompras;
 	string strdata;
+
 	getline(in, strId, ';');
 	strId.pop_back();
 	iId = stoi(strId);
