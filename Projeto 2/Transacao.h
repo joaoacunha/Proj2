@@ -24,7 +24,7 @@ class Transacao {
   Transacao(ifstream & in); // transacao na forma de  idCliente ; data ; lista de produtos
   unsigned int getIdCliente() const;
   void save(ofstream & out) const; // guarda a transacao
-  friend ostream& operator<<(ostream& out, const Transacao & trans); // mostra a transacao
+  //friend ostream& operator<<(ostream& out, const Transacao & trans); // mostra a transacao
 };
 
 

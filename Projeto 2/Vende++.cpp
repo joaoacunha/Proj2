@@ -3,7 +3,13 @@
 
 VendeMaisMais::VendeMaisMais(string loja, string fichClients, string fichProdutos, string fichTransacoes){
 
-  // A IMPLEMENTAR 
+	this->transacoesAlterdas = false;
+	this->clientesAlterados = false;
+	this->loja = loja;
+	this->fichClientes = fichClients;
+	this->fichProdutos = fichProdutos;
+	this->fichTransacoes = fichTransacoes;
+
 }
 
 /*********************************
@@ -52,8 +58,7 @@ void VendeMaisMais::saveChanges() const{
  ********************************/  
 
 // mostra o conteudo de uma loja
-ostream& operator<<(ostream& out, const VendeMaisMais & supermercado){
-
-  // A IMPLEMENTAR 
-
+ostream& operator<<(ostream& out, const VendeMaisMais & supermercado)
+{
+	return out;
 }

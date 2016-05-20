@@ -8,7 +8,7 @@ bool fileExists(string filename)
 
 bool infoInicial(string & loja, string & fichClientes, string & fichProdutos, string & fichTransacoes)
 {
-	bool result;
+	bool result = true;
 
 	string CLIENTS_FILENAME;
 	string PRODUCTS_FILENAME;
@@ -19,7 +19,7 @@ bool infoInicial(string & loja, string & fichClientes, string & fichProdutos, st
 	cin >> fichClientes;
 	cout << "Ficheiro dos Produtos: ";
 	cin >> fichProdutos;
-	cout << "Ficheiro das Transacaos: ";
+	cout << "Ficheiro das Transacoes: ";
 	cin >> fichTransacoes;
 	cout << endl;
 
@@ -65,7 +65,7 @@ bool infoInicial(string & loja, string & fichClientes, string & fichProdutos, st
 unsigned short int menuGestaoClientes(){
   unsigned short int opcao;
 
-  clearScreen();
+  system("cls");
   cout << TAB_BIG << "Menu Gestao Clientes" << endl;
   cout << endl;
   cout << TAB << "1 - Listar clientes" << endl;
@@ -106,7 +106,7 @@ void opcoesGestaoClientes(VendeMaisMais & supermercado){
  * Gestao de Transacoes
  ******************************************/
 unsigned short int menuGestaoTransacoes(){
-
+	return 1;
 }
 
 void opcoesGestaoTransacoes(VendeMaisMais & supermercado){
@@ -129,7 +129,7 @@ void opcoesGestaoTransacoes(VendeMaisMais & supermercado){
  * Gestao de Transacoes
  ******************************************/
 unsigned short int menuRecomendacao(){
-
+	return 1;
 }
 
 void opcoesRecomendacao(VendeMaisMais & supermercado){
@@ -155,7 +155,7 @@ void opcoesRecomendacao(VendeMaisMais & supermercado){
 unsigned short int menuInicial(){
   unsigned short int opcao;
 
-  clearScreen();
+  system("cls");
   cout << TAB_BIG << "Menu Inicial" << endl;
   cout << endl;
   cout << TAB << "1 - Gestao de clientes" << endl;

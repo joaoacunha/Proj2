@@ -28,13 +28,15 @@ void Cliente::save(ofstream & out) const{
 
 }
 
-ostream& operator<<(ostream& out, const Cliente & cli)
-{
-		out << cli.getId() << " ; " << cli.getNome() << " ; " << cli.getData() << " ; " << cli.getVolCompras();
-		return out;
-}
+//ostream& operator<<(ostream& out, const Cliente & cli)
+//{
+//		out << cli.getId() << " ; " << cli.getNome() << " ; " << cli.getData() << " ; " << cli.getVolCompras();
+//		return out;
+//}
 
 
 bool operator<(const Cliente &cli1, const Cliente &cli2){
   // A IMPLEMENTAR
+
+	return true;
 }

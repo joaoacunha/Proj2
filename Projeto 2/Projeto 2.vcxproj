@@ -146,6 +146,28 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Cliente.h" />
+    <ClInclude Include="Data.h" />
+    <ClInclude Include="defs.h" />
+    <ClInclude Include="Menus.h" />
+    <ClInclude Include="Produto.h" />
+    <ClInclude Include="Transacao.h" />
+    <ClInclude Include="utils.h" />
+    <ClInclude Include="Vende++.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="clientes.txt" />
+    <Text Include="produtos.txt" />
+    <Text Include="transacoes.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Cliente.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Menus.cpp" />
+    <ClCompile Include="Produto.cpp" />
+    <ClCompile Include="Transacao.cpp" />
+    <ClCompile Include="utils.cpp" />
+    <ClCompile Include="Vende++.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

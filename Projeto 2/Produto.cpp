@@ -15,11 +15,12 @@ float Produto::getCusto() const {
 
 ostream& operator<<(ostream& out, const Produto & prod)
 {
-	out << prod.getNome() << " ; " << prod.getCusto;
+	out << prod.getNome() << " ; " << prod.getCusto();
 	return out;
 }
 
 
 bool operator<(const Produto &prod1, const Produto &prod2){
   // A IMPLEMENTAR
+	return true;
 }

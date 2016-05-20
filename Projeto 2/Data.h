@@ -24,7 +24,7 @@ class Data {
   void setMes(int mes);
   void setAno(int ano);
   void save(ofstream & out) const;
-  friend ostream& operator<<(ostream& out, const Data & data);
+  friend ostream& operator <<(ostream& out, const Data & data);
 };
 
 
