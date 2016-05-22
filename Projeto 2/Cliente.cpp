@@ -72,7 +72,6 @@ istream & operator >> (const Cliente & cli, istream& in)
 	getline(in, strId, ';');
 	strId.pop_back();
 	iId = stoi(strId);
-
 }
 
 bool operator<(const Cliente &cli1, const Cliente &cli2){
